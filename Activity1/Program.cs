@@ -4,25 +4,25 @@ namespace Activity1
 {
     class Program
     {
-        static void Addition()
+        static void Subtraction()
         {
-            Console.Write("Enter the first number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the other number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-            int sum = num1 + num2;
-            Console.WriteLine("The sum is: " + sum);
+            Console.Write("Enter the minuend: ");
+            int minuend = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter the subtrahend: ");
+            int subtrahend = Convert.ToInt32(Console.ReadLine());
+            int diff = minuend - subtrahend;
+            Console.WriteLine("The difference is: " + diff);
             Console.WriteLine("");
         }
 
-        static void Multiplication()
+        static void Division()
         {
-            Console.Write("Enter the first number: ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the other number: ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
-            int product = num1 * num2;
-            Console.WriteLine("The product is: " + product);
+            Console.Write("Enter the dividend: ");
+            float dividend = float.Parse(Console.ReadLine());
+            Console.Write("Enter the divisor: ");
+            float divisor = float.Parse(Console.ReadLine());
+            float quotient = dividend / divisor;
+            Console.WriteLine("The quotient is: " + quotient.ToString("F2"));
             Console.WriteLine("");
         }
 
@@ -36,8 +36,8 @@ namespace Activity1
             Console.WriteLine("");
             
             Console.WriteLine("Please input the number only (1 or 2).");
-            Console.WriteLine("1. Addition");
-            Console.WriteLine("2. Multiplication");
+            Console.WriteLine("1. Subtraction");
+            Console.WriteLine("2. Division");
             Console.WriteLine("3. Exit");
             Console.WriteLine("");
 
@@ -50,11 +50,11 @@ namespace Activity1
                 Console.WriteLine("");
                 if (choice == 1)
                 {
-                    Addition();
+                    Subtraction();
                 }
                 else if (choice == 2)
                 {
-                    Multiplication();
+                    Division();
                 }
                 else if (choice == 3)
                 {
