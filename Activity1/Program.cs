@@ -41,7 +41,7 @@ namespace Activity1
             Console.WriteLine("3. Exit");
             Console.WriteLine("");
 
-            while (false)
+            while (true)
             {
                 Console.WriteLine("--------------------------------------");
                 Console.Write("Choice: ");
