@@ -13,8 +13,6 @@ namespace Activity1
             int sum = num1 + num2;
             Console.WriteLine("The sum is: " + sum);
             Console.WriteLine("");
-            Console.WriteLine ("Byeeeee...");
-            Console.WriteLine("");
         }
 
         static void Multiplication()
@@ -25,8 +23,6 @@ namespace Activity1
             int num2 = Convert.ToInt32(Console.ReadLine());
             int product = num1 * num2;
             Console.WriteLine("The product is: " + product);
-            Console.WriteLine("");
-            Console.WriteLine("Byeeeee...");
             Console.WriteLine("");
         }
 
