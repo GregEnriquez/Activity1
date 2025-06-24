@@ -44,23 +44,34 @@ namespace Activity1
             Console.WriteLine("2. Multiplication");
             Console.WriteLine("3. Exit");
             Console.WriteLine("");
-            
-            Console.Write("Choice: ");
-            int choice = Convert.ToInt32(Console.ReadLine());
-            
-            Console.WriteLine("");
-            if (choice == 1)
+
+            while (true)
             {
-                Addition();
-            }
-            else if (choice == 2)
-            {
-                Multiplication();
-            }
-            else if (choice == 3)
-            {
-                Console.WriteLine("Thank you, " + name + "!");
+                Console.WriteLine("--------------------------------------");
+                Console.Write("Choice: ");
+                int choice = Convert.ToInt32(Console.ReadLine());
+
                 Console.WriteLine("");
+                if (choice == 1)
+                {
+                    Addition();
+                }
+                else if (choice == 2)
+                {
+                    Multiplication();
+                }
+                else if (choice == 3)
+                {
+                    Console.WriteLine("Thank you, " + name + "!");
+                    Console.WriteLine("");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Input !!!");
+                    Console.WriteLine("Try again.");
+                    Console.WriteLine("");
+                }
             }
         }
     }
